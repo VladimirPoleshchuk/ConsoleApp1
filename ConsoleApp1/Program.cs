@@ -28,41 +28,56 @@ namespace ConsoleApp1
 			}
             Console.WriteLine();
         }
+
+
+
         static void MyMethod1()
         {
-        int i , j;
-            int[] nums1 = new int [10];
-            int[] nums2 = new int [10];
+             int i,j;
+            int [] nums1 = new int [10];
+            int [] nums2 = new int [10];
 
-            for ( i = 0; i <nams1.Length; i++)
-			{
-              nums1[i]=i;
-			}
+            for ( i = 0; i <nums1.Length; i++) nums1[i]=i;
+			
             Console.WriteLine("Исходное содержимое массива: ");
-
-            for ( i = 0; i <nums1.length; i++)
+        
+            for (  i = 0; i <nums1.Length; i++)
 			{
                 Console.Write(nums1[i] + " ");
 			}
              if (nums1.Length==nums2.Length)
          	{
-                for (i = 0, j=nums1.Length-1; i < nums1.Length; i++, j--)
+                for ( i = 0, j=nums1.Length-1; i < nums1.Length; i++, j--)
 			{
               nums2[j]=nums1[i];
 			}
-              Console.WriteLine("Содержимое массива в обратном порядке: ");
-                for ( i = 0; i <nums2.length; i++)
-			{
-                    Console.WriteLine(nums2[i] + " ");
-			}
+                MethodNams2();
+
                 Console.WriteLine();
 	        }
+          else
+	      {
+                MethodNams2();
+
+                Console.WriteLine("\nМассивы не соответствуют по размеру!");
+	       }
+       void MethodNams2()
+            {
+                Console.WriteLine("\nСодержимое массива в обратном порядке: ");
+
+                for ( i = 0; i <nums2.Length; i++)
+			    {
+                    Console.Write(nums2[i] + " ");
+			    }
+            }
+
 
         }
         static void Main(string[] args)
         {
         // MyMethod();  
            MyMethod1();
+         
         }
         
     }
