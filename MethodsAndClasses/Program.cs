@@ -3,7 +3,7 @@ using System;
 using System.Text;
 
 namespace MethodsAndClasses
-{
+{/*
     class Program
     {
         #region MyREF
@@ -28,7 +28,7 @@ namespace MethodsAndClasses
             string temp = a;
             a = b;
             b = temp;
-        }*/
+        }
         #endregion
 
         #region Out
@@ -38,7 +38,7 @@ namespace MethodsAndClasses
           firstName = name.Substring(0, i);
           lastName = name.Substring(i + 1);
       }
-        */
+        
         #endregion
 
         static void Addition(params int[] integers)
@@ -89,7 +89,7 @@ namespace MethodsAndClasses
             Console.WriteLine("{0} {1}", name, name2); 
             Swap(ref name, ref name2);
             Console.WriteLine("{0} {1}", name, name2);
-            */
+            
             #endregion
             #region Out
             /*
@@ -97,7 +97,7 @@ namespace MethodsAndClasses
             Split(c, out string a, out _);
             Console.WriteLine(a);
             Console.WriteLine();
-            */
+            
             #endregion
             #region Displey
             /*  Displey("Tom", 24);
@@ -118,7 +118,7 @@ namespace MethodsAndClasses
        static int Sum(int x, int y)
        {
            return x + y;
-       }*/
+       }
             #endregion
 
             Addition(1, 2, 3, 4);
@@ -128,8 +128,8 @@ namespace MethodsAndClasses
 
            
 
-
+        */
         }
        
-        }
-    }
+        
+    
